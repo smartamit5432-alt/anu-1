@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why I Love You</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Poppins;background:linear-gradient(135deg,#ff758c,#ff7eb3);color:#fff;text-align:center}
+nav{padding:15px;background:rgba(0,0,0,0.2)}
+nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:600}
+h1{font-family:'Dancing Script',cursive;font-size:3rem;margin-top:40px}
+.container{max-width:900px;margin:auto;padding:20px}
+button{padding:12px 20px;border:none;border-radius:30px;background:#fff;color:#ff4d6d;font-weight:600;cursor:pointer}
+.reason{margin-top:20px;font-size:1.3rem}
+</style>
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="memory.html">Our Memory</a>
+<a href="reasons.html">Why I Love You</a>
+<a href="forever.html">Forever</a>
+</nav>
+<div class="container">
+<h1>Why I Love You 💕</h1>
+<button onclick="showReason()">Tap ❤️</button>
+<div class="reason" id="reason"></div>
+</div>
+<script>
+const reasons=[
+"You are the most caring person in my life ❤️",
+"You are my comfort zone and peace 🤗",
+"Your eyes are my favorite place ✨"
+];
+function showReason(){document.getElementById('reason').innerText=reasons[Math.floor(Math.random()*reasons.length)]}
+</script>
+</body>
+</html>
